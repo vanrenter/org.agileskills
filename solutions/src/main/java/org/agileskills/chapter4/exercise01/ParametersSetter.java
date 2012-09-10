@@ -5,6 +5,4 @@ import java.sql.SQLException;
 
 interface ParametersSetter {
 	void setParameters(PreparedStatement satement) throws SQLException;
-	
-
 }
