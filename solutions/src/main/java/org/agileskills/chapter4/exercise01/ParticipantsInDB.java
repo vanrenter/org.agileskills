@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 class ParticipantsInDB {
-	Connection conn;
-	final String tableName = "participants";
+	private Connection conn;
+	private static final String TABLE_NAME = "participants";
 
 	/**
 	 * @param part
@@ -23,13 +23,13 @@ class ParticipantsInDB {
 			try {
 				st.close();
 			} catch (SQLException e) {
-				e.printStackTrace();
+				//e.printStackTrace();
 			}
 		}
 	}
 
 	void addParticipant(final Participant part) {
-		execute("INSERT INTO " + tableName+ "VALUES (?,?,?,?,?)", new ParametersSetter() {
+		execute("INSERT INTO " + TABLE_NAME+ "VALUES (?,?,?,?,?)", new ParametersSetter() {
 			
 			public void setParameters(PreparedStatement satement) throws SQLException {
 				satement.setString(1, part.getId());
@@ -41,14 +41,14 @@ class ParticipantsInDB {
 	}
 
 	void deleteAllParticipants() {
-			execute("DELETE FROM " + tableName,new ParametersSetter() {
+			execute("DELETE FROM " + TABLE_NAME,new ParametersSetter() {
 				public void setParameters(PreparedStatement satement) throws SQLException {
 				}
 			});
 	}
 
 	void deleteParticipant(final String participantId) {
-		execute("DELETE FROM " + tableName+ "WHERE id=?", new ParametersSetter() {
+		execute("DELETE FROM " + TABLE_NAME+ "WHERE id=?", new ParametersSetter() {
 			
 			public void setParameters(PreparedStatement satement) throws SQLException {
 				satement.setString(1, participantId);
