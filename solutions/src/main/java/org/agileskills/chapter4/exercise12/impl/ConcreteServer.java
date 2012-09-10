@@ -18,5 +18,29 @@ public class ConcreteServer extends Server implements DHCPServer, FileServer {
 	public DhcpConfig getAddressScope() {
 		return dhcpServer.getAddressScope();
 	}
+	/**
+	 * @return the dhcpServer
+	 */
+	public DHCPServer getDhcpServer() {
+		return dhcpServer;
+	}
+	/**
+	 * @param dhcpServer the dhcpServer to set
+	 */
+	public void setDhcpServer(DHCPServer dhcpServer) {
+		this.dhcpServer = dhcpServer;
+	}
+	/**
+	 * @return the fileServer
+	 */
+	public FileServer getFileServer() {
+		return fileServer;
+	}
+	/**
+	 * @param fileServer the fileServer to set
+	 */
+	public void setFileServer(FileServer fileServer) {
+		this.fileServer = fileServer;
+	}
 
 }

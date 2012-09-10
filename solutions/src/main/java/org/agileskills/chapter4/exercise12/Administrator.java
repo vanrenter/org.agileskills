@@ -15,8 +15,7 @@ public class Administrator extends User {
 	/**
 	 * @param managedServers the managedServers to set
 	 */
-	@SuppressWarnings("unused")
-	private void setManagedServers(List<Server> managedServers) {
+	protected void setManagedServers(List<Server> managedServers) {
 		this.managedServers = managedServers;
 	}
 	

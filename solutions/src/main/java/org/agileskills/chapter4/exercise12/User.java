@@ -13,8 +13,7 @@ public class User {
 	/**
 	 * @param id the id to set
 	 */
-	@SuppressWarnings("unused")
-	private void setId(String id) {
+	protected void setId(String id) {
 		this.id = id;
 	}
 	

@@ -10,4 +10,11 @@ public class DHCPServerImpl extends Server implements DHCPServer {
 	public DhcpConfig getAddressScope() {
 		return addressScope;
 	}
+
+	/**
+	 * @param addressScope the addressScope to set
+	 */
+	public void setAddressScope(DhcpConfig addressScope) {
+		this.addressScope = addressScope;
+	}
 }
