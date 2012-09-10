@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 class ParticipantsInDB {
-	Connection conn;
-	final String tableName = "participants";
+	private Connection conn;
+	public static final String tableName = "participants";
 
 	void addParticipant(Participant part) {
 		PreparedStatement st=null;
