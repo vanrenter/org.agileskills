@@ -1,4 +1,4 @@
-package org.agileskills.chapter4.exercise02;
+package org.agileskills.chapter4.exercise12;
 
 import java.net.InetAddress;
 
