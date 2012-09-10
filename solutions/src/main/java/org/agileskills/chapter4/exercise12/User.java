@@ -1,4 +1,4 @@
-package org.agileskills.chapter4.exercise02;
+package org.agileskills.chapter4.exercise12;
 
 public class User {
 	private String id;
@@ -13,6 +13,7 @@ public class User {
 	/**
 	 * @param id the id to set
 	 */
+	@SuppressWarnings("unused")
 	private void setId(String id) {
 		this.id = id;
 	}

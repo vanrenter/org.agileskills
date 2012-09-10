@@ -1,25 +1,27 @@
-package org.agileskills.chapter4.exercise02;
+package org.agileskills.chapter4.exercise12;
+
+import java.util.List;
 
 public class Administrator extends User {
-	private Server[] managedServers;
+	private List<Server> managedServers;
 
 	/**
 	 * @return the managedServers
 	 */
-	public Server[] getManagedServers() {
+	public List<Server> getManagedServers() {
 		return managedServers;
 	}
 
 	/**
 	 * @param managedServers the managedServers to set
 	 */
-	private void setManagedServers(Server[] managedServers) {
+	@SuppressWarnings("unused")
+	private void setManagedServers(List<Server> managedServers) {
 		this.managedServers = managedServers;
 	}
 	
 	public void assignResponsabilityOf(Server server) {
-		managedServers = new Server[managedServers.length+1];
-		managedServers[managedServers.length] = server;
+		managedServers.add(server);
 	}
 
 }

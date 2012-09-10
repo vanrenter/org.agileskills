@@ -1,4 +1,4 @@
-package org.agileskills.chapter4.exercise02.impl;
+package org.agileskills.chapter4.exercise12.impl;
 
 import java.util.HashMap;
 import java.util.Map;
