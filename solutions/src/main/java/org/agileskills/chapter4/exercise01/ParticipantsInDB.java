@@ -23,7 +23,6 @@ class ParticipantsInDB {
 			try {
 				st.close();
 			} catch (SQLException e) {
-				//e.printStackTrace();
 			}
 		}
 	}

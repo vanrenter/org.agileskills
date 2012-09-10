@@ -5,8 +5,9 @@ import java.util.Map;
 
 import org.agileskills.chapter4.exercise12.impl.DhcpConfig;
 
+@SuppressWarnings("unused")
 public class ServerConfigSystem {
-	public Server[] servers;
-	public Map<Administrator,List<Server>> serversByAdmin;
-	public Map<Server,DhcpConfig> dhcpConfigByServer;
+	private Server[] servers;
+	private Map<Administrator,List<Server>> serversByAdmin;
+	private Map<Server,DhcpConfig> dhcpConfigByServer;
 }
